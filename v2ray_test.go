@@ -36,7 +36,7 @@ func TestV2RayDependency(t *testing.T) {
 }
 
 func TestV2RayClose(t *testing.T) {
-	port := tcp.PickPort()
+	port := ws.PickPort()
 
 	userID := uuid.New()
 	config := &Config{
